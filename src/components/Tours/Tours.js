@@ -1,19 +1,18 @@
 import React from "react";
 
 
-function Tours(info) {
+function Tours(info){
 
-  return (
-    <>
+    return (
+      <>
+        <div >
+        <h2>{info.name}</h2>
 
+        <img src={info.image_url} alt={info.name} />
+        </div>
 
-      <h2>{info.name}</h2>
-
-      <img src={info.image_url} alt={info.name} />
-
-
-    </>
-  );
+      </>
+    );
 }
 
 export default Tours;
