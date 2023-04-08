@@ -1,16 +1,14 @@
-import React from 'react';
-import './Tour.css';
+//import React from 'react';
+//import './Tour.css';
 
-const Tour = ({ tour }) => {
+const Tour = (props) => {
   
 
   return (
-    <div className='tour'>
-      <img src={tour.image} alt={tour.name} />
-      <div className='tour-info'>
-        <h4>{tour.name}</h4>
-      </div>
-    </div>
+    <>
+    <h2>{props.name}</h2>
+    <img src={props.image} alt={props.name}/>
+    </>
   );
 };
 
